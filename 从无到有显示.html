@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#box{
+				width: 346px;
+				height: 250px;
+				border: 2px solid royalblue;
+				margin: 50px auto;
+			}
+			img{
+				/*display: none;*/
+				-webkit-transition-duration: 1.5s;
+				-webkit-transform: scale(0);
+			}
+			#box:hover img{
+				-webkit-transform: scale(1);
+				/*display: block;*/
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<img src="img/1.jpg"/>
+		</div>
+	</body>
+</html>
