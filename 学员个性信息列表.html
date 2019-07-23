@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			dl{
+				width: 400px;
+				height: 150px;
+				border: 1px red solid;
+				margin: 20px;
+				box-sizing: border-box;
+				padding: 20px 0 0 20px;
+				border-radius: 0 15px 15px 0;
+				border-left-width: 5px;
+			}
+			dl:hover{
+				-webkit-transition-duration: 1s;
+				width: 500px;
+				background-color: coral;
+			}
+			dl:hover dt img{
+				-webkit-animation-name: run;
+				-webkit-animation-duration: 2s;
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-timing-function: linear;
+			}
+			dl:hover dd p{
+				-webkit-transform: scale(1.1);
+				color: blueviolet;
+				-webkit-transform: translateX(15px);
+			}
+			@-webkit-keyframes run{
+				from{
+					-webkit-transform: rotate(0);
+				}
+				to{
+					-webkit-transform: rotate(360deg);
+				}
+			}
+			dt{
+				float: left;
+				margin-right: 20px;
+			}
+			dl:nth-child(2n+1) dd p:first-child:after{
+				content: url(img/7.png);
+				width: 10px;
+				height: 10px;
+				display: inline-block;
+				margin-left: 10px;
+			}
+			dl:nth-child(2n) dd p:first-child:after{
+				content: url(img/8.png);
+				width: 10px;
+				height: 10px;
+				display: inline-block;
+				margin-left: 10px;
+			}
+			dt img{
+				width: 100px;
+				border-radius: 50%;
+			}
+			dd{
+				margin-top: 20px;
+			}
+			p{
+				line-height: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<dl>
+			<dt><img src="img/3.jpg"/></dt>
+			<dd>
+				<p>那年初夏</p>
+				<p>人生的痛苦，留则有，放则无。</p>
+			</dd>
+		</dl>
+		<dl>
+			<dt><img src="img/2.jpg"/></dt>
+			<dd>
+				<p>人生若只是初见</p>
+				<p>向最坏处想，向最好处干。</p>
+			</dd>
+		</dl>
+		<dl>
+			<dt><img src="img/4.jpg"/></dt>
+			<dd>
+				<p>亦久亦旧</p>
+				<p>勤奋是永不贬值的财富。</p>
+			</dd>
+		</dl><dl>
+			<dt><img src="img/5.jpg"/></dt>
+			<dd>
+				<p>张老师</p>
+				<p>人生没有如果，只有后果和结果。</p>
+			</dd>
+		</dl><dl>
+			<dt><img src="img/6.jpg"/></dt>
+			<dd>
+				<p>帅的太过分</p>
+				<p>低头要有勇气，抬头要有底气。</p>
+			</dd>
+		</dl><dl>
+			<dt><img src="img/9.jpg"/></dt>
+			<dd>
+				<p>倩女幽魂</p>
+				<p>努力在我，评价在人。</p>
+			</dd>
+		</dl>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
