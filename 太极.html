@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<style type="text/css">
+			.box {
+				width: 200px;
+				height: 100px;
+				border-bottom: solid 100px black;
+				border-radius: 50%;
+				box-shadow: 0px 0px 15px blue ;
+				position: relative;
+				-webkit-animation-name: run;
+				-webkit-animation-duration: 2s;
+				-webkit-animation-timing-function: linear;
+				-webkit-animation-iteration-count: infinite;
+			}
+			@-webkit-keyframes run{
+				from{
+					-webkit-transform: rotate(0);
+				}
+				to{
+					-webkit-transform: rotate(360deg);
+				}
+			}
+			.box:before{
+				content: "";
+				width: 40px;
+				height: 40px;
+				border: 30px black solid;
+				background-color: white;
+				display: block;
+				border-radius: 50%;
+				position: absolute;
+				top: 50px;
+				left: 0;
+			}
+			.box:after{
+				content: "";
+				width: 40px;
+				height: 40px;
+				border: 30px white solid;
+				background-color: black;
+				display: block;
+				position: absolute;
+				top: 50px;
+				right: 0;
+				border-radius: 50%;
+			}
+			
+			
+		</style>
+		<div class="box"></div>
+	</body>
+</html>

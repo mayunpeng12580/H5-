@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				width: 346px;
+				height: 250px;
+				border: 1px dotted black;
+				position: relative;
+			}
+			.box:hover .word{
+				/*-webkit-transition-duration: 1s;*/
+				top: 40px;
+			}
+			.box:hover .image img{
+				
+				-webkit-transform: rotateX(50deg);
+				-webkit-transform-origin: bottom center;
+			}
+			.image{
+				width: 346px;
+				height: 250px;
+				perspective: 800px;
+				-webkit-transition-duration: 1s;
+			}
+			.image img {
+				-webkit-transition-duration: 1s;
+			}
+			.word{
+				width: 346px;
+				height: 250px;
+				box-sizing: border-box;
+				position: absolute;
+				top: -200px;
+				text-align: center;
+				color: blueviolet;
+				font-weight: bold;
+				-webkit-transition-duration: 1s;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="image"><img src="img/1.jpg"/></div>
+			<div class="word">
+				<p>学如逆水行舟，不进则退。</p>
+				<p>心思平原走马，易放难收。</p>
+			</div>
+		</div>
+	</body>
+</html>
